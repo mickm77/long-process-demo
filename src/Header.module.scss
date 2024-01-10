@@ -1,0 +1,35 @@
+
+
+.container {
+    min-height: 8rex;
+    width: 100%;
+    background-color: white;
+    padding: 0 1rem;
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        li {
+            min-width: 10ch;
+            max-width: 20ch;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #eee;
+            }
+        }
+    }
+}
