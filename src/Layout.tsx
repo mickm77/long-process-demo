@@ -4,14 +4,14 @@ import Header from "./Header";
 import css from "./Layout.module.scss";
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children, setPage }) => {
     return (
         <>
-            <Header />
-        <div className={css.container}>
-            {children}
-        </div>
-            </>
+            <Header setPage={setPage} />
+            <div className={css.container}>
+                {children}
+            </div>
+        </>
     );
 };
 
